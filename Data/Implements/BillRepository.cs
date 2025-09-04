@@ -13,7 +13,21 @@ namespace entrega_viernes_5_09.Data.Implements
     {
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            List<Parametro> parametros = new List<Parametro>()
+            {
+                new Parametro()
+                {
+                    Name = "@nroFactura",
+                    Valor = id
+                }
+            };
+            DataHelper.GetInstance().ExecuteSPQuery("SP_REGISTRAR_BAJA_FACTURA", parametros);
+            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FACTURA_POR_ID", parametros);
+            if ((bool)dt.Rows[0]["facturaActiva"] == false)
+            {
+                return true;
+            }
+            return false;
         }
 
         public List<Bill> GetAll()

@@ -42,6 +42,7 @@ namespace entrega_viernes_5_09.Data.Helper
             }
             catch (SqlException ex)
             {
+                Console.WriteLine(ex);
                 dt = null;
             }
             finally
@@ -119,7 +120,7 @@ namespace entrega_viernes_5_09.Data.Helper
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cliente", bill.Cliente);
             cmd.Parameters.AddWithValue("@idForma", bill.Payment.Id);
-            cmd.Parameters.AddWithValue("@estaActivo", bill.estaActivo);
+            cmd.Parameters.AddWithValue("@estaActivo", bill.FacturaActiva);
             SqlParameter param = new SqlParameter("@nroFactura", SqlDbType.Int);
             param.Direction = ParameterDirection.Output;
             cmd.Parameters.Add(param);

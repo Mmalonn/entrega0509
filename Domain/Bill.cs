@@ -12,7 +12,7 @@ namespace entrega_viernes_5_09.Domain
         public DateTime fecha { get; set; }
         public Payment Payment { get; set; }
         public string Cliente { get; set; }
-        public bool estaActivo { get; set; }
+        public bool FacturaActiva { get; set; }
         public List<DetailBill> Details { get; set; }
         public Bill()
         {

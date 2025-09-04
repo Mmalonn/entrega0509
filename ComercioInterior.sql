@@ -27,7 +27,7 @@ create table Facturas(
 	fecha date,
 	idForma int,
 	cliente varchar(50),
-	estaActivo bit
+	facturaActiva bit
 	constraint pk_factura primary key (nroFactura),
 	constraint fk_factura_forma foreign key(idForma)
 	references FormasDePago(id)
@@ -97,24 +97,24 @@ go
 CREATE PROCEDURE SP_INSERTAR_FACTURA
 	@cliente varchar(50),
 	@idForma int,
-	@estaActivo bit,
+	@facturaActiva bit,
 	@nroFactura int output
 AS
 BEGIN
-	INSERT INTO Facturas(cliente, fecha, idForma , estaActivo) VALUES (@cliente, GETDATE(), @idForma, @estaActivo);
+	INSERT INTO Facturas(cliente, fecha, idForma , facturaActiva) VALUES (@cliente, GETDATE(), @idForma, @facturaActiva);
 	SET @nroFactura = SCOPE_IDENTITY();
 END
 GO
 
 CREATE PROCEDURE SP_RECUPERAR_FACTURA_POR_ID
-	@id int
+	@nroFactura int
 AS
 BEGIN
 	SELECT f.*, df.cantidad, a.*
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON f.nroFactura = df.idFactura
 	  INNER JOIN Articulos a ON df.idArticulo = a.id
-	  WHERE f.nroFactura = @id;
+	  WHERE f.nroFactura = @nroFactura;
 END
 GO
 
@@ -175,6 +175,14 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE SP_REGISTRAR_BAJA_FACTURA
+	@nroFactura int 
+AS
+BEGIN
+	UPDATE Facturas SET facturaActiva = 0 WHERE nroFactura = @nroFactura;
+END
+GO
+
 INSERT INTO FormasDePago (nombre, estaActivo) VALUES ('Efectivo',1);
 INSERT INTO FormasDePago (nombre, estaActivo) VALUES ('Tarjeta de Credito',1);
 INSERT INTO FormasDePago (nombre, estaActivo) VALUES ('Transferencia Bancaria',1);
@@ -197,17 +205,17 @@ INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Tijera escol
 INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Corrector liquido', 1.25, 1);
 GO
 
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 1, 'Marcos Torres', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 2, 'Ana Gomez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 3, 'Carlos Perez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 1, 'Laura Fernandez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 5, 'Javier Rodriguez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 2, 'Maria Lopez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 3, 'Roberto Sanchez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 1, 'Camila Diaz', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 4, 'Andres Garcia', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 5, 'Sofia Ramirez', 1);
-INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 2, 'Pedro Fernandez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 1, 'Marcos Torres', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 2, 'Ana Gomez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 3, 'Carlos Perez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 1, 'Laura Fernandez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 5, 'Javier Rodriguez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 2, 'Maria Lopez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 3, 'Roberto Sanchez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 1, 'Camila Diaz', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 4, 'Andres Garcia', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 5, 'Sofia Ramirez', 1);
+INSERT INTO Facturas (fecha, idForma, cliente, facturaActiva) VALUES (GETDATE(), 2, 'Pedro Fernandez', 1);
 GO
 
 INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (1, 1, 45);
@@ -246,3 +254,5 @@ INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (10, 10, 11
 INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (11, 11, 46);
 INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (11, 12, 39);
 GO
+
+select * from facturas
