@@ -8,24 +8,24 @@ using System.Threading.Tasks;
 
 namespace entrega_viernes_5_09.Data.Implements
 {
-    public class BillRepository : IBillRepository
+    public class ArticuloRepository : IArticuloRepository
     {
         public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Bill> GetAll()
+        public List<Article> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Bill? GetById(int id)
+        public Article? GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Save(Bill bill)
+        public bool Save(Article article)
         {
             throw new NotImplementedException();
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace entrega_viernes_5_09.Domain
 {
-    public class Articles
+    public class Article
     {
         public  int Id { get; set; }
         public string Nombre { get; set; }

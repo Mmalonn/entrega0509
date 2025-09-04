@@ -8,7 +8,7 @@ namespace entrega_viernes_5_09.Domain
 {
     public class DetailBill
     {
-        public Articles Articulo { get; set; }
+        public Article Articulo { get; set; }
         public int Cantidad {  get; set; }
         public double Subtotal()
         {
