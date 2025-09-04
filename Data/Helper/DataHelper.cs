@@ -117,7 +117,7 @@ namespace entrega_viernes_5_09.Data.Helper
         public bool ExecuteBillTransaction(Bill bill)
         {
             _connection.Open();
-            SqlTransaction transaction = _connection.BeginTransaction();
+            SqlTransaction? transaction = _connection.BeginTransaction();
             var cmd = new SqlCommand("SP_INSERTAR_FACTURA", _connection, transaction);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cliente", bill.Cliente);
