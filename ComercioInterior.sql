@@ -121,7 +121,7 @@ GO
 CREATE PROCEDURE SP_RECUPERAR_FACTURAS
 AS
 BEGIN
-	SELECT f.*, df.cantidad, df.idDetalle , a.*
+	SELECT f.*, df.* , a.*
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON df.idFactura =f.nroFactura
 	  INNER JOIN Articulos a ON a.id = df.idArticulo
