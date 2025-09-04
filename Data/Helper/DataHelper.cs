@@ -120,6 +120,9 @@ namespace entrega_viernes_5_09.Data.Helper
             cmd.Parameters.AddWithValue("@cliente", bill.Cliente);
             cmd.Parameters.AddWithValue("@idForma", bill.Payment.Id);
             cmd.Parameters.AddWithValue("@estaActivo", bill.estaActivo);
+            SqlParameter param = new SqlParameter("@nroFactura", SqlDbType.Int);
+            param.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(param);
             int affectedRows = cmd.ExecuteNonQuery();
             if (affectedRows <= 0)
             {
@@ -128,32 +131,22 @@ namespace entrega_viernes_5_09.Data.Helper
             }
             else
             {
-                SqlParameter param = new SqlParameter("@id", SqlDbType.Int);
-                param.Direction = ParameterDirection.Output;
-                cmd.Parameters.Add(param);
-                cmd.ExecuteNonQuery();
                 int billId = (int)param.Value;
-                int detailID = 1;
                 foreach (DetailBill d in bill.Details)
                 {
                     SqlCommand cmdDetail = new SqlCommand("SP_INSERTAR_DETALLE", _connection, transaction);
                     cmdDetail.CommandType = CommandType.StoredProcedure;
-
-                    cmdDetail.Parameters.AddWithValue("@nro_factura", billId);
-                    cmdDetail.Parameters.AddWithValue("@idDetalle", detailID);
+                    cmdDetail.Parameters.AddWithValue("@nroFactura", billId);
                     cmdDetail.Parameters.AddWithValue("@idArticulo", d.Articulo.Id);
                     cmdDetail.Parameters.AddWithValue("@cantidad", d.Cantidad);
                     cmdDetail.Parameters.AddWithValue("@estaActivo", d.estaActivo);
-
                     int affectedRowsDetalle = cmdDetail.ExecuteNonQuery();
-
                     if (affectedRowsDetalle <= 0)
                     {
                         transaction.Rollback();
                         return false;
                     }
                 }
-
                 transaction.Commit();
                 return true;
             }

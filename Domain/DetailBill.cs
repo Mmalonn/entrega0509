@@ -11,6 +11,11 @@ namespace entrega_viernes_5_09.Domain
         public Article Articulo { get; set; }
         public int Cantidad {  get; set; }
         public bool estaActivo { get; set; }
+
+        public override string ToString()
+        {
+            return Articulo.Nombre + " x " + Cantidad + " unidades";
+        }
         public decimal Subtotal()
         {
             return Cantidad * Articulo.PrecioUnitario;

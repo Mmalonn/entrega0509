@@ -1,4 +1,5 @@
-﻿using entrega_viernes_5_09.Data.Repositorys;
+﻿using entrega_viernes_5_09.Data.Helper;
+using entrega_viernes_5_09.Data.Repositorys;
 using entrega_viernes_5_09.Domain;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace entrega_viernes_5_09.Data.Implements
 
         public bool Save(Bill bill)
         {
-            throw new NotImplementedException();
+            return DataHelper.GetInstance().ExecuteBillTransaction(bill);
         }
     }
 }

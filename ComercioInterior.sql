@@ -34,7 +34,7 @@ create table Facturas(
 )
 
 create table DetallesFactura(
-	idDetalle int,
+	idDetalle int identity (1,1),
 	idFactura int,
 	idArticulo int,
 	cantidad int,
@@ -87,13 +87,12 @@ GO
 
 CREATE PROCEDURE SP_INSERTAR_DETALLE
 	@nroFactura int,
-	@idDetalle int,
 	@idArticulo int,
 	@cantidad int,
 	@estaActivo bit
 AS
 BEGIN
-	INSERT INTO DetallesFactura(idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (@idDetalle, @nroFactura, @idArticulo, @cantidad, @estaActivo);	
+	INSERT INTO DetallesFactura(idFactura, idArticulo, cantidad, estaActivo) VALUES (@nroFactura, @idArticulo, @cantidad, @estaActivo);	
 END
 go
 
@@ -213,44 +212,44 @@ INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 5,
 INSERT INTO Facturas (fecha, idForma, cliente, estaActivo) VALUES (GETDATE(), 2, 'Pedro Fernandez', 1);
 GO
 
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 1, 1, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 1, 3, 2, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 2, 2, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 3, 4, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 3, 5, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 4, 6, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 5, 7, 3, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 6, 9, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 7, 10, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 7, 1, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 8, 11, 2, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 9, 12, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 9, 2, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 10, 5, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 11, 10, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 1, 5, 2, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 1, 6, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 2, 7, 3, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 2, 8, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 3, 9, 2, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 4, 10, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 4, 11, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 5, 12, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 5, 1, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 5, 2, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 6, 3, 2, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 7, 4, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 7, 5, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 8, 6, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 8, 7, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 9, 8, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 9, 9, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 10, 10, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 11, 11, 1, 1);
-INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 11, 12, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 1, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 3, 2, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 2, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 4, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 5, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 6, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (5, 7, 3, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (6, 9, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (7, 10, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (7, 1, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (8, 11, 2, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (9, 12, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (9, 2, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (10, 5, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (11, 10, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 5, 2, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (1, 6, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 7, 3, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (2, 8, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (3, 9, 2, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 10, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (4, 11, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (5, 12, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (5, 1, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (5, 2, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (6, 3, 2, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (7, 4, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (7, 5, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (8, 6, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (8, 7, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (9, 8, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (9, 9, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (10, 10, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (11, 11, 1, 1);
+INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad, estaActivo) VALUES (11, 12, 1, 1);
 GO
 
 select * from articulos
 select * from FormasDePago
-
 select * from facturas
+select * from DetallesFactura
