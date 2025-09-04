@@ -3,6 +3,7 @@ using entrega_viernes_5_09.Data.Repositorys;
 using entrega_viernes_5_09.Domain;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +33,47 @@ namespace entrega_viernes_5_09.Data.Implements
 
         public List<Bill> GetAll()
         {
-            throw new NotImplementedException();
+            List<Bill> lst = new List<Bill>();
+            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FACTURAS");
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                return lst;
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int nroFactura = (int)row["nroFactura"];
+                Bill oBill = null;
+                foreach (Bill billExistente in lst)
+                {
+                    if (billExistente.nroFactura == nroFactura)
+                    {
+                        oBill = billExistente;
+                        break;
+                    }
+                }
+                if (oBill == null)
+                {
+                    oBill = new Bill();
+                    oBill.nroFactura = nroFactura;
+                    oBill.Cliente = (string)row["cliente"];
+                    oBill.fecha = (DateTime)row["fecha"];
+                    oBill.FacturaActiva = (bool)row["facturaActiva"];
+                    oBill.Details = new List<DetailBill>();
+                    lst.Add(oBill);
+                }
+                Article oArticle = new Article();
+                oArticle.Id = (int)row["id"];
+                oArticle.Nombre = (string)row["nombre"];
+                oArticle.PrecioUnitario = (decimal)row["precioUnitario"];
+                oArticle.EstaActivo = (bool)row["estaActivo"];
+                DetailBill oDetail = new DetailBill();
+                oDetail.Cantidad = (int)row["cantidad"];
+                oDetail.Articulo = oArticle;
+                oBill.Details.Add(oDetail);
+            }
+            return lst;
         }
 
         public Bill? GetById(int id)

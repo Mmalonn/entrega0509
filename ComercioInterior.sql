@@ -121,7 +121,7 @@ GO
 CREATE PROCEDURE SP_RECUPERAR_FACTURAS
 AS
 BEGIN
-	SELECT f.*, df.cantidad, a.*
+	SELECT f.*, df.cantidad, df.idDetalle , a.*
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON df.idFactura =f.nroFactura
 	  INNER JOIN Articulos a ON a.id = df.idArticulo
@@ -254,5 +254,3 @@ INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (10, 10, 11
 INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (11, 11, 46);
 INSERT INTO DetallesFactura (idFactura, idArticulo, cantidad) VALUES (11, 12, 39);
 GO
-
-select * from facturas

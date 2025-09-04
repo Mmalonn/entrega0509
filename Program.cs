@@ -47,5 +47,9 @@ BillService bService = new BillService();
 
 //Console.WriteLine(bService.SaveBill(factura));
 
-Console.WriteLine(bService.DeleteBill(1));
+//Console.WriteLine(bService.DeleteBill(1));
 
+//foreach (Bill b in bService.GetBills())
+//{
+//    Console.WriteLine("La factura " + b.nroFactura + " con su cliente: " + b.Cliente + " el dia: " + b.fecha);
+//}
