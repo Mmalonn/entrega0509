@@ -43,7 +43,7 @@ go
 CREATE PROCEDURE SP_GUARDAR_ARTICULO
 @id int,
 @nombre varchar(20),
-@precioUnitario int
+@precioUnitario int,
 @estaActivo bit
 AS
 BEGIN 

@@ -10,7 +10,6 @@ namespace entrega_viernes_5_09.Domain
     {
         public Articles Articulo { get; set; }
         public int Cantidad {  get; set; }
-
         public double Subtotal()
         {
             return Cantidad * Articulo.precioUnitario;
