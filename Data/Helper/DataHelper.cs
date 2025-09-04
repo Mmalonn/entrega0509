@@ -11,7 +11,7 @@ namespace entrega_viernes_5_09.Data.Helper
 {
     public class DataHelper
     {
-        private static DataHelper _instance;
+        private static DataHelper? _instance;
         private SqlConnection _connection;
 
         private DataHelper()
@@ -30,9 +30,9 @@ namespace entrega_viernes_5_09.Data.Helper
         {
             return _connection;
         }
-        public DataTable ExecuteSPQuery(string sp)
+        public DataTable? ExecuteSPQuery(string sp)
         {
-            DataTable dt = new DataTable();
+            DataTable? dt = new DataTable();
             try
             {
                 _connection.Open();
@@ -52,9 +52,9 @@ namespace entrega_viernes_5_09.Data.Helper
             return dt;
         }
 
-        public DataTable ExecuteSPQuery(string sp, List<Parametro>? param = null)
+        public DataTable? ExecuteSPQuery(string sp, List<Parametro>? param = null)
         {
-            DataTable dt = new DataTable();
+            DataTable? dt = new DataTable();
             try
             {
                 _connection.Open();
@@ -72,6 +72,7 @@ namespace entrega_viernes_5_09.Data.Helper
             }
             catch (SqlException ex)
             {
+                Console.WriteLine(ex);
                 dt = null;
             }
             finally
@@ -102,6 +103,7 @@ namespace entrega_viernes_5_09.Data.Helper
             }
             catch (SqlException ex)
             {
+                Console.WriteLine(ex);
                 result = false;
             }
             finally
@@ -120,7 +122,7 @@ namespace entrega_viernes_5_09.Data.Helper
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@cliente", bill.Cliente);
             cmd.Parameters.AddWithValue("@idForma", bill.Payment.Id);
-            cmd.Parameters.AddWithValue("@estaActivo", bill.FacturaActiva);
+            cmd.Parameters.AddWithValue("@facturaActiva", bill.FacturaActiva);
             SqlParameter param = new SqlParameter("@nroFactura", SqlDbType.Int);
             param.Direction = ParameterDirection.Output;
             cmd.Parameters.Add(param);
@@ -148,8 +150,9 @@ namespace entrega_viernes_5_09.Data.Helper
                     }
                 }
                 transaction.Commit();
+                _connection.Close();
                 return true;
-            }
+            }          
         }
        
     }

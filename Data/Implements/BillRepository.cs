@@ -44,7 +44,7 @@ namespace entrega_viernes_5_09.Data.Implements
             foreach (DataRow row in dt.Rows)
             {
                 int nroFactura = (int)row["nroFactura"];
-                Bill oBill = null;
+                Bill? oBill = null;
                 foreach (Bill billExistente in lst)
                 {
                     if (billExistente.nroFactura == nroFactura)
@@ -78,7 +78,38 @@ namespace entrega_viernes_5_09.Data.Implements
 
         public Bill? GetById(int id)
         {
-            throw new NotImplementedException();
+            List<Parametro> param = new List<Parametro>()
+            {
+                new Parametro() { Name = "@nroFactura", Valor = id }
+            };
+            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FACTURA_POR_ID", param);
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                return null;
+            }
+            Bill? bill = null;
+            foreach (DataRow row in dt.Rows)
+            {
+                if (bill == null)
+                {
+                    bill = new Bill();
+                    bill.nroFactura = (int)row["nroFactura"];
+                    bill.Cliente = (string)row["cliente"];
+                    bill.fecha = (DateTime)row["fecha"];
+                    bill.FacturaActiva = (bool)row["facturaActiva"];
+                    bill.Details = new List<DetailBill>();
+                }
+                Article article = new Article();
+                article.Id = (int)row["id"];
+                article.Nombre = (string)row["nombre"];
+                article.PrecioUnitario = (decimal)row["precioUnitario"];
+                article.EstaActivo = (bool)row["estaActivo"];
+                DetailBill detail = new DetailBill();
+                detail.Cantidad = (int)row["cantidad"];
+                detail.Articulo = article;
+                bill.Details.Add(detail);
+            }
+            return bill;
         }
 
         public bool Save(Bill bill)

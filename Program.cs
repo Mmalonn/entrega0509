@@ -49,7 +49,10 @@ BillService bService = new BillService();
 
 //Console.WriteLine(bService.DeleteBill(1));
 
-//foreach (Bill b in bService.GetBills())
-//{
-//    Console.WriteLine("La factura " + b.nroFactura + " con su cliente: " + b.Cliente + " el dia: " + b.fecha);
-//}
+foreach (Bill b in bService.GetBills())
+{
+    Console.WriteLine(b);
+}
+
+Console.WriteLine(bService.GetBill(4));
+

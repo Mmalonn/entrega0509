@@ -10,8 +10,8 @@ namespace entrega_viernes_5_09.Domain
     {
         public int nroFactura { get; set; }
         public DateTime fecha { get; set; }
-        public Payment Payment { get; set; }
-        public string Cliente { get; set; }
+        public Payment? Payment { get; set; }
+        public string? Cliente { get; set; }
         public bool FacturaActiva { get; set; }
         public List<DetailBill> Details { get; set; }
         public Bill()
@@ -35,6 +35,10 @@ namespace entrega_viernes_5_09.Domain
                 total += detail.Subtotal();
             }
             return total;
+        }
+        public override string ToString()
+        {
+            return "La factura " + nroFactura + " con su cliente: " + Cliente + " el dia: " + fecha;
         }
     }
 }

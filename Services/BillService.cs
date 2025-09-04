@@ -24,7 +24,7 @@ namespace entrega_viernes_5_09.Services
         {
             return _billRepository.Save(bill);
         }
-        public Bill? GetArticle(int id)
+        public Bill? GetBill(int id)
         {
             return _billRepository.GetById(id);
         }
