@@ -11,13 +11,13 @@ namespace entrega_viernes_5_09.Domain
     {
         public  int Id { get; set; }
         public string Nombre { get; set; }
-        public double precioUnitario {  get; set; }
-        public int EstaActivo { get; set; }
+        public decimal PrecioUnitario {  get; set; }
+        public bool EstaActivo { get; set; }
 
         public override string ToString()
         {
             string activo;
-            if (EstaActivo == 1)
+            if (EstaActivo == true)
             {
                 activo = "se encuentra activo";
             }
@@ -25,7 +25,7 @@ namespace entrega_viernes_5_09.Domain
             {
                 activo = "No esta activo";
             }
-                return Id + " - " + Nombre + " - " + activo + ". - $" + precioUnitario;
+                return Id + " - " + Nombre + " - " + activo + ". - $" + PrecioUnitario;
 
         }
     }

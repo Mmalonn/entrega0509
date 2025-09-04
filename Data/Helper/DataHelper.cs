@@ -25,6 +25,26 @@ namespace entrega_viernes_5_09.Data.Helper
             }
             return _instance;
         }
+        public DataTable ExecuteSPQuery(string sp)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                _connection.Open();
+                var cmd = new SqlCommand(sp, _connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                dt.Load(cmd.ExecuteReader());
+            }
+            catch (SqlException ex)
+            {
+                dt = null;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+            return dt;
+        }
 
         public DataTable ExecuteSPQuery(string sp, List<Parametro>? param = null)
         {
@@ -53,6 +73,37 @@ namespace entrega_viernes_5_09.Data.Helper
                 _connection.Close();
             }
             return dt;
+        }
+        public bool ExecuteSpDml(string sp, List<Parametro>? param = null)
+        {
+            bool result;
+            try
+            {
+                _connection.Open();
+                var cmd = new SqlCommand(sp, _connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (param != null)
+                {
+                    foreach (Parametro p in param)
+                    {
+                        cmd.Parameters.AddWithValue(p.Name, p.Valor);
+                    }
+                }
+
+                int affectedRows = cmd.ExecuteNonQuery();
+
+                result = affectedRows > 0;
+            }
+            catch (SqlException ex)
+            {
+                result = false;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+
+            return result;
         }
 
         public int ExecuteSPDMLTransact(string sp, List<Parametro>? parametros, SqlTransaction transaction)

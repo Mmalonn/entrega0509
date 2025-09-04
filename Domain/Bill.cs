@@ -26,9 +26,9 @@ namespace entrega_viernes_5_09.Domain
         {
             Details.RemoveAt(id);
         }
-        public double Total()
+        public decimal Total()
         {
-            double total = 0;
+            decimal total = 0;
             foreach (DetailBill detail in Details)
             {
                 total += detail.Subtotal();
@@ -36,3 +36,4 @@ namespace entrega_viernes_5_09.Domain
             return total;
         }
     }
+}

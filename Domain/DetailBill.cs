@@ -10,9 +10,9 @@ namespace entrega_viernes_5_09.Domain
     {
         public Article Articulo { get; set; }
         public int Cantidad {  get; set; }
-        public double Subtotal()
+        public decimal Subtotal()
         {
-            return Cantidad * Articulo.precioUnitario;
+            return Cantidad * Articulo.PrecioUnitario;
         }
     }
 }

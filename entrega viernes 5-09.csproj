@@ -9,12 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Implements\" />
-    <Folder Include="Data\Repositorys\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
   </ItemGroup>
 

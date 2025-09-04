@@ -1,0 +1,67 @@
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.csproj.AssemblyReference.cache
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega_viernes_5_09.Properties.Resource1.resources
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.csproj.GenerateResource.cache
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.AssemblyInfoInputs.cache
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.AssemblyInfo.cs
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.csproj.CoreCompileInputs.cache
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.sourcelink.json
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\entrega viernes 5-09.exe
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\entrega viernes 5-09.deps.json
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\entrega viernes 5-09.runtimeconfig.json
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\entrega viernes 5-09.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\entrega viernes 5-09.pdb
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega .5F93E6F9.Up2Date
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\refint\entrega viernes 5-09.dll
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.pdb
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\entrega viernes 5-09.genruntimeconfig.cache
+C:\Users\marco\Desktop\tecnicatura\2do cuatrimestre\Programacion 2\unidad 1\entrega viernes 5-09\obj\Debug\net8.0\ref\entrega viernes 5-09.dll

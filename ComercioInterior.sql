@@ -142,18 +142,18 @@ INSERT INTO FormasDePago (nombre) VALUES ('Debito');
 INSERT INTO FormasDePago (nombre) VALUES ('PayPal');
 GO
 
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Laptop gamer', 1500.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Monitor 27 pulgadas', 350.50, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Mouse inalambrico', 25.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Teclado mecanico', 80.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('SSD 1TB', 100.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Router Wi-Fi 6', 75.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Webcam Full HD', 50.25, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Auriculares gaming', 65.00, 0); 
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Parlantes de escritorio', 45.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Microfono condensador', 95.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Impresora multifuncional', 200.00, 1);
-INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Disco duro externo', 85.00, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Cuaderno A4 rayado', 2.50, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Boligrafo azul', 0.75, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Carpeta de anillas', 3.20, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Lapiz grafito HB', 0.50, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Caja de lapices de colores', 6.00, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Sacapuntas metalico', 1.00, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Goma de borrar', 0.85, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Marcador negro', 1.50, 1); 
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Set de reglas (20cm)', 2.10, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Plumones de colores', 8.50, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Tijera escolar', 2.75, 1);
+INSERT INTO Articulos (nombre, precioUnitario, estaActivo) VALUES ('Corrector liquido', 1.25, 1);
 GO
 
 INSERT INTO Facturas (fecha, idForma, cliente) VALUES (GETDATE(), 1, 'Marcos Torres');
@@ -205,3 +205,5 @@ INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad) VALUES 
 INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad) VALUES (2, 11, 11, 1);
 INSERT INTO DetallesFactura (idDetalle, idFactura, idArticulo, cantidad) VALUES (3, 11, 12, 1);
 GO
+
+select * from articulos
