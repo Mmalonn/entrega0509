@@ -25,13 +25,11 @@ Article nuevoArticulo1 = aService.GetArticle(1);
 DetailBill nuevoDetalle1 = new DetailBill();
     nuevoDetalle1.Articulo = nuevoArticulo1;
     nuevoDetalle1.Cantidad = 10;
-    nuevoDetalle1.estaActivo = true;
 
 Article nuevoArticulo2 = aService.GetArticle(2);
 DetailBill nuevoDetalle2 = new DetailBill();
     nuevoDetalle2.Articulo = nuevoArticulo2;
     nuevoDetalle2.Cantidad = 20;
-    nuevoDetalle2.estaActivo = true;
 Console.WriteLine(nuevoDetalle1);
 Console.WriteLine(nuevoDetalle2);
 
@@ -43,7 +41,7 @@ Payment pago = pService.GetPayment(1);
 
 Bill factura = new Bill();
 factura.Payment = pago;
-factura.Cliente = "testeador testiño";
+factura.Cliente = "testeador testiño2";
 factura.estaActivo = true;
 factura.Details = lista;
 

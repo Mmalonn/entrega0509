@@ -139,7 +139,6 @@ namespace entrega_viernes_5_09.Data.Helper
                     cmdDetail.Parameters.AddWithValue("@nroFactura", billId);
                     cmdDetail.Parameters.AddWithValue("@idArticulo", d.Articulo.Id);
                     cmdDetail.Parameters.AddWithValue("@cantidad", d.Cantidad);
-                    cmdDetail.Parameters.AddWithValue("@estaActivo", d.estaActivo);
                     int affectedRowsDetalle = cmdDetail.ExecuteNonQuery();
                     if (affectedRowsDetalle <= 0)
                     {
