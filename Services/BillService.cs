@@ -22,6 +22,15 @@ namespace entrega_viernes_5_09.Services
         }
         public bool SaveBill(Bill bill)
         {
+            var detallesConsolidados = bill.Details
+                .GroupBy(d => d.Articulo.Nombre)
+                .Select(g => new DetailBill
+                {
+                    Articulo = g.First().Articulo,
+                    Cantidad = g.Sum(d => d.Cantidad)
+                })
+                .ToList();
+            bill.Details = detallesConsolidados;
             return _billRepository.Save(bill);
         }
         public Bill? GetBill(int id)

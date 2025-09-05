@@ -32,9 +32,15 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine(nuevoDetalle1);
 //Console.WriteLine(nuevoDetalle2);
 
+//Article nuevoArticulo3 = aService.GetArticle(2);
+//DetailBill nuevoDetalle3 = new DetailBill();
+//nuevoDetalle3.Articulo = nuevoArticulo3;
+//nuevoDetalle3.Cantidad = 100;
+
 //List<DetailBill> lista = new List<DetailBill>();
 //lista.Add(nuevoDetalle1);
 //lista.Add(nuevoDetalle2);
+//lista.Add(nuevoDetalle3);
 
 //Payment pago = pService.GetPayment(1);
 
@@ -54,6 +60,10 @@ Console.WriteLine("Hello, World!");
 //}
 
 //Console.WriteLine(bService.GetBill(4));
+
+
+
+
 
 
 bool seguirPreguntandoPrincipal = true;
@@ -85,9 +95,22 @@ while (seguirPreguntandoPrincipal)
                                 seguirEnSubMenuArticulos = false;
                                 break;
                             case 2:
-                                Console.WriteLine("Seleccionó 2: baja de artículos");
-                                Console.WriteLine("funcion no añadida");
-                                seguirEnSubMenuArticulos = false;
+                                Console.WriteLine("Seleccionó 2: baja de artículos. Ingrese el codigo del articulo a eliminar");
+                                if (int.TryParse(Console.ReadLine(), out int idArticulo1))
+                                {
+                                    if (aService.DeleteArticle(idArticulo1))
+                                    {
+                                        Console.WriteLine("Articulo eliminado: ");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("No existe");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Entrada no válida.");
+                                }
                                 break;
                             case 3:
                                 Console.WriteLine("Seleccionó 3: consulta general de artículos");
@@ -150,9 +173,22 @@ while (seguirPreguntandoPrincipal)
                                 seguirEnSubMenuFacturas = false;
                                 break;
                             case 2:
-                                Console.WriteLine("Seleccionó 2: baja de facturas");
-                                Console.WriteLine("funcion no añadida");
-                                seguirEnSubMenuFacturas = false;
+                                Console.WriteLine("Seleccionó 2: baja de facturas. Ingrese el numero de factura a eliminar");
+                                if (int.TryParse(Console.ReadLine(), out int idFactura1))
+                                {
+                                    if (bService.DeleteBill(idFactura1))
+                                    {
+                                        Console.WriteLine("Factura eliminada");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("No existe");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Entrada no válida.");
+                                }
                                 break;
                             case 3:
                                 Console.WriteLine("Seleccionó 3: consulta general de facturas");
@@ -215,9 +251,22 @@ while (seguirPreguntandoPrincipal)
                                 seguirEnSubMenuPagos = false;
                                 break;
                             case 2:
-                                Console.WriteLine("Seleccionó 2: baja de formas de pago");
-                                Console.WriteLine("funcion no añadida");
-                                seguirEnSubMenuPagos = false;
+                                Console.WriteLine("Seleccionó 2: baja de formas de pago. Ingrese el codigo de la forma de pago a eliminar");
+                                if (int.TryParse(Console.ReadLine(), out int idPayment1))
+                                {
+                                    if (pService.DeletePayment(idPayment1))
+                                    {
+                                        Console.WriteLine("Forma de pago eliminada");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("No existe");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Entrada no válida.");
+                                }
                                 break;
                             case 3:
                                 Console.WriteLine("Seleccionó 3: consulta general de formas de pago");
@@ -228,9 +277,9 @@ while (seguirPreguntandoPrincipal)
                                 break;
                             case 4:
                                 Console.WriteLine("Seleccionó 4: consulta de formas de pago por id, ingrese el código");
-                                if (int.TryParse(Console.ReadLine(), out int idPago))
+                                if (int.TryParse(Console.ReadLine(), out int idPayment))
                                 {
-                                    Payment pago = pService.GetPayment(idPago);
+                                    Payment pago = pService.GetPayment(idPayment);
                                     if (pago != null)
                                     {
                                         Console.WriteLine("Eligió la forma de pago: " + pago);
@@ -276,3 +325,4 @@ while (seguirPreguntandoPrincipal)
         Console.WriteLine("Entrada no válida. Por favor, ingrese un número.");
     }
 }
+
