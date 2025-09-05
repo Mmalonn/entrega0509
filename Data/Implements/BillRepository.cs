@@ -22,11 +22,18 @@ namespace entrega_viernes_5_09.Data.Implements
                     Valor = id
                 }
             };
-            DataHelper.GetInstance().ExecuteSPQuery("SP_REGISTRAR_BAJA_FACTURA", parametros);
-            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FACTURA_POR_ID", parametros);
-            if ((bool)dt.Rows[0]["facturaActiva"] == false)
+            try
             {
-                return true;
+                DataHelper.GetInstance().ExecuteSPQuery("SP_REGISTRAR_BAJA_FACTURA", parametros);
+                var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FACTURA_POR_ID", parametros);
+                if ((bool)dt.Rows[0]["facturaActiva"] == false)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
             return false;
         }

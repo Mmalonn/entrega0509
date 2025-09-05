@@ -9,11 +9,11 @@ namespace entrega_viernes_5_09.Domain
     public class DetailBill
     {
         public Article Articulo { get; set; }
-        public int Cantidad {  get; set; }
+        public int Cantidad { get; set; }
 
         public override string ToString()
         {
-            return Articulo.Nombre + " x " + Cantidad + " unidades";
+            return "Detalle: " + Articulo.Nombre + " x " + Cantidad + " unidades.... Subtotal: " + Subtotal();
         }
         public decimal Subtotal()
         {

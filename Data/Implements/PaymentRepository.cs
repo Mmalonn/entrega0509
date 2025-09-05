@@ -22,12 +22,20 @@ namespace entrega_viernes_5_09.Data.Implements
                     Valor = id
                 }
             };
-            DataHelper.GetInstance().ExecuteSPQuery("SP_REGISTRAR_BAJA_FORMAPAGO", parametros);
-            var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FORMAPAGO_POR_CODIGO", parametros);
-            if ((bool)dt.Rows[0]["estaActivo"] == false)
+            try
             {
-                return true;
+                DataHelper.GetInstance().ExecuteSPQuery("SP_REGISTRAR_BAJA_FORMAPAGO", parametros);
+                var dt = DataHelper.GetInstance().ExecuteSPQuery("SP_RECUPERAR_FORMAPAGO_POR_CODIGO", parametros);
+                if ((bool)dt.Rows[0]["estaActivo"] == false)
+                {
+                    return true;
+                }
             }
+            catch
+            {
+                return false;
+            }
+
             return false;
         }
 

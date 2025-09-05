@@ -24,14 +24,14 @@ DetailBill nuevoDetalle1 = new DetailBill();
 nuevoDetalle1.Articulo = art1;
 nuevoDetalle1.Cantidad = 10;
 
-Article art2 = aService.GetArticle(1);
+Article art2 = aService.GetArticle(2);
 DetailBill nuevoDetalle2 = new DetailBill();
 nuevoDetalle2.Articulo = art2;
 nuevoDetalle2.Cantidad = 20;
 //Console.WriteLine(nuevoDetalle1);
 //Console.WriteLine(nuevoDetalle2);
 
-Article art3 = aService.GetArticle(1);
+Article art3 = aService.GetArticle(2);
 DetailBill nuevoDetalle3 = new DetailBill();
 nuevoDetalle3.Articulo = art3;
 nuevoDetalle3.Cantidad = 100;
@@ -101,12 +101,20 @@ while (seguirPreguntandoPrincipal)
                                         aService.SaveArticle(nuevoArticulo);
                                         Console.WriteLine("articulo insertado");
                                     }
-                                    else
+                                    else if (aceptar == 0)
                                     {
                                         Console.WriteLine("articulo no insertado");
                                     }
+                                    else
+                                    {
+                                        Console.WriteLine("Numero invalido");
+                                    }
                                 }
-                                break;
+                                else
+                                {
+                                    Console.WriteLine("Entrada no valida.");
+                                }
+                                    break;
                             case 2:
                                 Console.WriteLine("Seleccionó 2: baja de artículos. Ingrese el codigo del articulo a eliminar");
                                 if (int.TryParse(Console.ReadLine(), out int idArticulo1))
@@ -187,10 +195,18 @@ while (seguirPreguntandoPrincipal)
                                         bService.SaveBill(nuevaFactura);
                                         Console.WriteLine("factura insertada");
                                     }
-                                    else
+                                    else if (aceptar == 0)
                                     {
                                         Console.WriteLine("factura no insertada");
                                     }
+                                    else
+                                    {
+                                        Console.WriteLine("Numero invalido");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Entrada no valida.");
                                 }
                                 break;
                             case 2:
@@ -226,6 +242,10 @@ while (seguirPreguntandoPrincipal)
                                     if (factura != null)
                                     {
                                         Console.WriteLine("Eligió la factura: " + factura);
+                                        foreach(DetailBill db in factura.Details)
+                                        {
+                                            Console.WriteLine(db);
+                                        }
                                     }
                                     else
                                     {
@@ -273,10 +293,18 @@ while (seguirPreguntandoPrincipal)
                                         pService.SavePayment(nuevoPago);
                                         Console.WriteLine("forma de pago insertada");
                                     }
-                                    else
+                                    else if (aceptar == 0)
                                     {
                                         Console.WriteLine("forma de pago no insertada");
                                     }
+                                    else
+                                    {
+                                        Console.WriteLine("Numero invalido");
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Entrada no valida.");
                                 }
                                 break;
                             case 2:

@@ -38,7 +38,7 @@ namespace entrega_viernes_5_09.Domain
         }
         public override string ToString()
         {
-            return "Factura: " + nroFactura + " - Cliente: " + Cliente + " - Dia: " + fecha + " Activa: " + FacturaActiva;
+            return "Factura: " + nroFactura + " - Cliente: " + Cliente + " - Dia: " + fecha + " -----Total: " + Total() + "----- Activa: " + FacturaActiva;
         }
     }
 }
