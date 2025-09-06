@@ -43,9 +43,9 @@ namespace web_api.Controllers
                     return BadRequest("Se esperaba una factura");
                 }
                 if (bServicio.SaveBill(bill))
-                    return Ok("Factura guardada");
+                    return Ok("Orden registrada con éxito!");
                 else
-                    return StatusCode(500, "No se pudo guardar");
+                    return StatusCode(500, "No se pudo registrar la orden!");
             }
             catch (Exception)
             {
@@ -61,8 +61,9 @@ namespace web_api.Controllers
 
         // DELETE api/<FacturaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            return Ok(bServicio.DeleteBill(id));
         }
     }
 }
