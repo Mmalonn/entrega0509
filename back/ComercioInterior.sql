@@ -114,6 +114,7 @@ BEGIN
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON f.nroFactura = df.idFactura
 	  INNER JOIN Articulos a ON df.idArticulo = a.id
+	  INNER JOIN FormasDePago fp ON fp.id = f.idForma
 	  WHERE f.nroFactura = @nroFactura;
 END
 GO
@@ -121,10 +122,11 @@ GO
 CREATE PROCEDURE SP_RECUPERAR_FACTURAS
 AS
 BEGIN
-	SELECT f.*, df.* , a.*
+	SELECT f.*, df.* , a.*, fp.*
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON df.idFactura =f.nroFactura
 	  INNER JOIN Articulos a ON a.id = df.idArticulo
+	  INNER JOIN FormasDePago fp ON fp.id = f.idForma
 	  ORDER BY f.nroFactura;
 END
 GO

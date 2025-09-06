@@ -79,6 +79,11 @@ namespace entrega_viernes_5_09.Data.Implements
                 oDetail.Cantidad = (int)row["cantidad"];
                 oDetail.Articulo = oArticle;
                 oBill.Details.Add(oDetail);
+                Payment oPayment = new Payment();
+                oPayment.Id = (int)row[13];
+                oPayment.Nombre = (string)row[14];
+                oPayment.EstaActivo = (bool)row[15];
+                oBill.Payment = oPayment;
             }
             return lst;
         }
@@ -115,6 +120,11 @@ namespace entrega_viernes_5_09.Data.Implements
                 detail.Cantidad = (int)row["cantidad"];
                 detail.Articulo = article;
                 bill.Details.Add(detail);
+                Payment oPayment = new Payment();
+                oPayment.Id = (int)row[10];
+                oPayment.Nombre = (string)row[11];
+                oPayment.EstaActivo = (bool)row[12];
+                bill.Payment = oPayment;
             }
             return bill;
         }

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\back\entrega viernes 5-09.csproj" />
+    <ProjectReference Include="..\back\back.csproj" />
   </ItemGroup>
 
 </Project>

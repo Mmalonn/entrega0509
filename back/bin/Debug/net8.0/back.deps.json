@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "entrega viernes 5-09/1.0.0": {
+      "back/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "6.1.1"
         },
         "runtime": {
-          "entrega viernes 5-09.dll": {}
+          "back.dll": {}
         }
       },
       "Azure.Core/1.47.1": {
@@ -414,7 +414,7 @@
     }
   },
   "libraries": {
-    "entrega viernes 5-09/1.0.0": {
+    "back/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
