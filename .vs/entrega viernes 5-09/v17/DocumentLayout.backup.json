@@ -1,0 +1,332 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\domain\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:domain\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\domain\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:domain\\detailbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\implements\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\implements\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\implements\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\implements\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\implements\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\implements\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\domain\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:domain\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\domain\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:domain\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:services\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:services\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\helper\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\helper\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\helper\\parametro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\helper\\parametro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\repositorys\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\repositorys\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\repositorys\\ibillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\repositorys\\ibillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|c:\\users\\marco\\desktop\\tecnicatura\\2do cuatrimestre\\programacion 2\\unidad 1\\entrega viernes 5-09\\data\\repositorys\\iarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD549E85-7245-4322-B6DB-40D17355AF05}|entrega viernes 5-09.csproj|solutionrelative:data\\repositorys\\iarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2090367263:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Article.cs",
+              "RelativeDocumentMoniker": "Domain\\Article.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Article.cs",
+              "RelativeToolTip": "Domain\\Article.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T01:35:08.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetailBill.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\DetailBill.cs",
+              "RelativeDocumentMoniker": "Domain\\DetailBill.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\DetailBill.cs",
+              "RelativeToolTip": "Domain\\DetailBill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T00:28:44.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Parametro.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Helper\\Parametro.cs",
+              "RelativeDocumentMoniker": "Data\\Helper\\Parametro.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Helper\\Parametro.cs",
+              "RelativeToolTip": "Data\\Helper\\Parametro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T21:34:49.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArticleService.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Services\\ArticleService.cs",
+              "RelativeDocumentMoniker": "Services\\ArticleService.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Services\\ArticleService.cs",
+              "RelativeToolTip": "Services\\ArticleService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T21:26:55.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IArticleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IArticleRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositorys\\IArticleRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IArticleRepository.cs",
+              "RelativeToolTip": "Data\\Repositorys\\IArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:25:47.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Implements\\ArticleRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\ArticleRepository.cs",
+              "RelativeToolTip": "Data\\Implements\\ArticleRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIAxwCQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:25:39.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAAAgwCIBAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T18:22:28.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IBillRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositorys\\IBillRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IBillRepository.cs",
+              "RelativeToolTip": "Data\\Repositorys\\IBillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:25:50.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BillService.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Services\\BillService.cs",
+              "RelativeDocumentMoniker": "Services\\BillService.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Services\\BillService.cs",
+              "RelativeToolTip": "Services\\BillService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA3wBwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:24:28.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Bill.cs",
+              "RelativeDocumentMoniker": "Domain\\Bill.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Bill.cs",
+              "RelativeToolTip": "Domain\\Bill.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T18:43:45.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataHelper.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Helper\\DataHelper.cs",
+              "RelativeDocumentMoniker": "Data\\Helper\\DataHelper.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Helper\\DataHelper.cs",
+              "RelativeToolTip": "Data\\Helper\\DataHelper.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAwwIkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T18:24:21.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositorys\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Repositorys\\IPaymentRepository.cs",
+              "RelativeToolTip": "Data\\Repositorys\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:25:52.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Payment.cs",
+              "RelativeDocumentMoniker": "Domain\\Payment.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Domain\\Payment.cs",
+              "RelativeToolTip": "Domain\\Payment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T19:27:49.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\BillRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Implements\\BillRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\BillRepository.cs",
+              "RelativeToolTip": "Data\\Implements\\BillRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIAxwCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T01:06:51.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Implements\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\marco\\Desktop\\tecnicatura\\2do cuatrimestre\\Programacion 2\\unidad 1\\entrega viernes 5-09\\Data\\Implements\\PaymentRepository.cs",
+              "RelativeToolTip": "Data\\Implements\\PaymentRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIA2wCMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T17:17:03.467Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 33,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
