@@ -41,5 +41,9 @@ namespace entrega_viernes_5_09.Services
         {
             return _billRepository.Delete(id);
         }
+        public bool UpdateBill(Bill bill)
+        {
+            return _billRepository.UpdateBill(bill);
+        }
     }
 }

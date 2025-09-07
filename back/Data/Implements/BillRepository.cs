@@ -1,9 +1,11 @@
 ﻿using entrega_viernes_5_09.Data.Helper;
 using entrega_viernes_5_09.Data.Repositorys;
 using entrega_viernes_5_09.Domain;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,6 +134,34 @@ namespace entrega_viernes_5_09.Data.Implements
         public bool Save(Bill bill)
         {
             return DataHelper.GetInstance().ExecuteBillTransaction(bill);
+        }
+
+        public bool UpdateBill(Bill bill)
+        {
+            List<Parametro> parametros = new List<Parametro>()
+            {
+                new Parametro()
+                {
+                    Name = "@nroFactura",
+                    Valor = bill.nroFactura
+                },
+                new Parametro()
+                {
+                    Name = "@cliente",
+                    Valor = bill.Cliente
+                },
+                new Parametro()
+                {
+                    Name = "@idForma",
+                    Valor = bill.Payment.Id
+                },
+                new Parametro()
+                {
+                    Name = "@facturaActiva",
+                    Valor = bill.FacturaActiva
+                }
+            };
+            return DataHelper.GetInstance().ExecuteSpDml("SP_ACTUALIZAR_FACTURA", parametros);
         }
     }
 }

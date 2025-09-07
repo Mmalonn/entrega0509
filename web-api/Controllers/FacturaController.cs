@@ -43,9 +43,9 @@ namespace web_api.Controllers
                     return BadRequest("Se esperaba una factura");
                 }
                 if (bServicio.SaveBill(bill))
-                    return Ok("Orden registrada con éxito!");
+                    return Ok("Factura registrada con éxito!");
                 else
-                    return StatusCode(500, "No se pudo registrar la orden!");
+                    return StatusCode(500, "No se pudo registrar la factura!");
             }
             catch (Exception)
             {
@@ -55,8 +55,23 @@ namespace web_api.Controllers
 
         // PUT api/<FacturaController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult Put(int id, [FromBody] Bill bill)
         {
+            try
+            {
+                if (bill == null)
+                {
+                    return BadRequest("Se esperaba una factura");
+                }
+                if (bServicio.UpdateBill(bill))
+                    return Ok("Factura actualizada con éxito!");
+                else
+                    return StatusCode(500, "No se pudo registrar la factura!");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno, intente nuevamente!");
+            }
         }
 
         // DELETE api/<FacturaController>/5

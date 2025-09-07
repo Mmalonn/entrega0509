@@ -106,11 +106,26 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE SP_ACTUALIZAR_FACTURA
+    @nroFactura INT,
+    @cliente VARCHAR(50),
+    @idForma INT,
+    @facturaActiva BIT
+AS
+BEGIN
+    UPDATE Facturas
+    SET	cliente = @cliente,
+        idForma = @idForma,
+        facturaActiva = @facturaActiva
+    WHERE	nroFactura = @nroFactura;
+END
+GO
+
 CREATE PROCEDURE SP_RECUPERAR_FACTURA_POR_ID
 	@nroFactura int
 AS
 BEGIN
-	SELECT f.*, df.cantidad, a.*
+	SELECT f.*, df.cantidad, a.*, fp.*
 	  FROM Facturas f
 	  INNER JOIN DetallesFactura df ON f.nroFactura = df.idFactura
 	  INNER JOIN Articulos a ON df.idArticulo = a.id

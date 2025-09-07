@@ -13,5 +13,6 @@ namespace entrega_viernes_5_09.Data.Repositorys
         Bill? GetById(int id);
         bool Save(Bill bill);
         bool Delete(int id);
+        bool UpdateBill(Bill bill);
     }
 }
